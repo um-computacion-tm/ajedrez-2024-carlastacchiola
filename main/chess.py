@@ -1,3 +1,5 @@
+from board import Board
+
 class Chess: 
     def __init__(self, board):
         self.__board__ = board()
@@ -10,8 +12,20 @@ class Chess:
         to_row,
         to_col,
     ):
-        ...
-        
+    
+        piece = self.__board__.get_piece(from_row, from_col)
+        self.change_turn()
+    @property
+    def turn(self):
+        return self.__turn__
+
+    def change_turn(self):
+        if self.__turn__ == "WHITE":
+            self.__turn__ = "BLACK"
+
+        else:
+            self.__turn__ = "WHITE"
+
 def change_turn(self):
     if self.turn == 'WHITE': 
         self.turn = 'BLACK'
