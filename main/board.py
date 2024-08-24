@@ -1,5 +1,4 @@
-
-from rook import Rook 
+from main.rook import Rook 
 
 class Board:
     def __init__(self):
