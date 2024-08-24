@@ -1,4 +1,4 @@
-from piece import Piece
+from .piece import Piece
 
 class Rook(Piece):
     def __str__(self):
