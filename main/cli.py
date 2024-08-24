@@ -5,6 +5,7 @@ def main():
     while chess.is_playing():
         play(chess)
 
+
 def play(chess):
     try:
         print(chess.show_board())
@@ -22,6 +23,7 @@ def play(chess):
         )
     except Exception as e:
         print("error", e)
+
 
 
 if __name__ == '__main__':
