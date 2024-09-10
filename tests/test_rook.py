@@ -1,8 +1,8 @@
-import unittest
 from main.rook import Rook  
+import unittest
+
 
 class TestRook(unittest.TestCase):
-
     def setUp(self):
         self.white_rook = Rook("WHITE")
         self.black_rook = Rook("BLACK")
