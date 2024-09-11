@@ -5,7 +5,7 @@ import unittest
 class TestChess(unittest.TestCase):
     def test_initial_turn(self):
         chess = Chess()
-        self.assertEqual(self.game.turn, "WHITE")
+        self.assertEqual(chess.turn, "WHITE")
 
 
 if __name__ == "__main__":
