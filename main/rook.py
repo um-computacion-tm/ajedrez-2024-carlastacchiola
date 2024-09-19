@@ -2,9 +2,9 @@ from .piece import Piece
 
 class Rook(Piece):
     def __str__(self):
-        if self.__color__ == "WHITE":
-            return "♜"
         if self.__color__ == "BLACK":
+            return "♜"
+        if self.__color__ == "WHITE":
             return "♖"
         
     def get_possible_moves(self, x, y):
