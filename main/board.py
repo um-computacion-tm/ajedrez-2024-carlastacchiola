@@ -1,9 +1,9 @@
 from rook import Rook
 from horse import Horse
-from bishop import Bishop 
+#from bishop import Bishop 
 from pawn import Pawn
-from queen import Queen
-from king import King
+#from queen import Queen
+#from king import King
 
 
 class Board:
@@ -33,18 +33,18 @@ class Board:
         self.__positions__[7][6] = Horse('♘')
 
         # Bishops
-        self.__positions__[0][2] = Bishop('♝')
-        self.__positions__[0][5] = Bishop('♝')
-        self.__positions__[7][2] = Bishop('♗')
-        self.__positions__[7][5] = Bishop('♗')
+        #self.__positions__[0][2] = Bishop('♝')
+        #self.__positions__[0][5] = Bishop('♝')
+        #self.__positions__[7][2] = Bishop('♗')
+        #self.__positions__[7][5] = Bishop('♗')
 
         # Queens
-        self.__positions__[0][3] = Queen('♛')
-        self.__positions__[7][3] = Queen('♕')
+        #self.__positions__[0][3] = Queen('♛')
+        #self.__positions__[7][3] = Queen('♕')
 
         # Kings
-        self.__positions__[0][4] = King('♚')
-        self.__positions__[7][4] = King('♔')
+        #self.__positions__[0][4] = King('♚')
+        #self.__positions__[7][4] = King('♔')
         
     
        

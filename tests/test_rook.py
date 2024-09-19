@@ -4,12 +4,12 @@ import unittest
 
 class TestRook(unittest.TestCase):
     def setUp(self):
-        self.white_rook = Rook("WHITE")
-        self.black_rook = Rook("BLACK")
+        self.white_rook = Rook("BLACK")
+        self.black_rook = Rook("WHITE")
 
     def test_str_method(self):
-        self.assertEqual(str(self.white_rook), "♜")
-        self.assertEqual(str(self.black_rook), "♖")
+        self.assertEqual(str(self.black_rook),"♜")
+        self.assertEqual(str(self.white_rook),"♖")
 
     def test_possible_moves(self):
         
