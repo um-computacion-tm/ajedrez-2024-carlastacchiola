@@ -1,7 +1,7 @@
 from main.board import Board
 from main.rook import Rook
-from main.pawn import Pawn
-from main.horse import Horse
+#from main.pawn import Pawn
+#from main.horse import Horse
 import unittest
 
 
@@ -20,15 +20,15 @@ class TestBoard(unittest.TestCase):
         piece=board.get_piece(0,0)
         self.assertIsInstance(piece,Rook)
     
-    def test_get_piece_00(self):
-        board = Board()
-        piece=board.get_piece(0,0)
-        self.assertIsInstance(piece,Pawn)
+   # def test_get_piece_00(self):
+   #     board = Board()
+   #    piece=board.get_piece(0,0)
+   #    self.assertIsInstance(piece,Pawn)
 
-    def test_get_piece_00(self):
-        board = Board()
-        piece=board.get_piece(0,0)
-        self.assertIsInstance(piece,Horse)
+    #def test_get_piece_00(self):
+    #    board = Board()
+    #    piece=board.get_piece(0,0)
+    #    self.assertIsInstance(piece,Horse)
 
 
 if __name__ == "__main__":

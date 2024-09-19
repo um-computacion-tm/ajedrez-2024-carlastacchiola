@@ -1,9 +1,10 @@
-from rook import Rook
-from horse import Horse
-#from bishop import Bishop 
-from pawn import Pawn
-#from queen import Queen
-#from king import King
+
+from main.rook import Rook
+from main.horse import Horse
+from main.bishop import Bishop 
+from main.pawn import Pawn
+from main.queen import Queen
+from main.king import King
 
 
 class Board:
@@ -16,9 +17,22 @@ class Board:
             self.__positions__.append(col)
         
         # Pawns 
-        for col in range(8):
-            self.__positions__[1][col] = Pawn("♟")  
-            self.__positions__[6][col] = Pawn("♙")
+        self.__positions__[1][0] = Pawn("♟")
+        self.__positions__[1][1] = Pawn("♟") 
+        self.__positions__[1][2] = Pawn("♟") 
+        self.__positions__[1][3] = Pawn("♟") 
+        self.__positions__[1][4] = Pawn("♟") 
+        self.__positions__[1][5] = Pawn("♟") 
+        self.__positions__[1][6] = Pawn("♟")
+        self.__positions__[1][7] = Pawn("♟")    
+        self.__positions__[6][0] = Pawn("♙")
+        self.__positions__[6][1] = Pawn("♙")
+        self.__positions__[6][2] = Pawn("♙")
+        self.__positions__[6][3] = Pawn("♙")
+        self.__positions__[6][4] = Pawn("♙")
+        self.__positions__[6][5] = Pawn("♙")
+        self.__positions__[6][6] = Pawn("♙")
+        self.__positions__[6][7] = Pawn("♙")
 
         #Rooks
         self.__positions__[0][0] = Rook("♜") 
@@ -33,18 +47,18 @@ class Board:
         self.__positions__[7][6] = Horse('♘')
 
         # Bishops
-        #self.__positions__[0][2] = Bishop('♝')
-        #self.__positions__[0][5] = Bishop('♝')
-        #self.__positions__[7][2] = Bishop('♗')
-        #self.__positions__[7][5] = Bishop('♗')
+        self.__positions__[0][2] = Bishop('♝')
+        self.__positions__[0][5] = Bishop('♝')
+        self.__positions__[7][2] = Bishop('♗')
+        self.__positions__[7][5] = Bishop('♗')
 
         # Queens
-        #self.__positions__[0][3] = Queen('♛')
-        #self.__positions__[7][3] = Queen('♕')
+        self.__positions__[0][3] = Queen('♛')
+        self.__positions__[7][3] = Queen('♕')
 
         # Kings
-        #self.__positions__[0][4] = King('♚')
-        #self.__positions__[7][4] = King('♔')
+        self.__positions__[0][4] = King('♚')
+        self.__positions__[7][4] = King('♔')
         
     
        
