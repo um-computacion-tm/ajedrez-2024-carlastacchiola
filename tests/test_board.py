@@ -1,5 +1,6 @@
 from main.board import Board
 from main.rook import Rook
+from main.pawn import Pawn
 import unittest
 
 
@@ -13,12 +14,11 @@ class TestBoard(unittest.TestCase):
         for i in range(8):
             self.assertEqual(len(board.__positions__[i]),8)
 
-    def test_get_piece_00(self):
-        board = Board()
-        piece=board.get_piece(0,0)
-        self.assertIsInstance(piece,Rook)
     
-
+    def test_rook_positions(self):
+        board = Board()
+        piece = board.get_piece(0, 0)
+        self.assertIsInstance(piece, Rook)
 
 
 if __name__ == "__main__":
